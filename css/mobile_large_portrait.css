@@ -1,0 +1,12 @@
+body {
+	float:none;
+	background:#fff;
+}
+#main_login {
+	position:relative;
+	margin: 0 auto;
+	padding:10px;
+	text-align:center;
+}
+
+

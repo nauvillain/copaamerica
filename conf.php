@@ -73,7 +73,7 @@
 		"CDEF"=>array("C","D","F","E"));
 
 	$stadium=array(
-		1=>"https://en.wikipedia.org/wiki/Levi's_Stadium",
+		1=>"https://en.wikipedia.org/wiki/Levi%27s_Stadium",
 		2=>"https://en.wikipedia.org/wiki/Soldier_Field",
 		3=>"https://en.wikipedia.org/wiki/MetLife_Stadium",
 		4=>"https://en.wikipedia.org/wiki/Rose_Bowl_%28stadium%29",

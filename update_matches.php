@@ -10,9 +10,6 @@ if(!is_admin($login_id)){
 	echo "Sorry, for admin purposes only!";	
 	break;
 	}
-?>
-
-<?
 
 
 /*Show the matches that have been played already
@@ -38,7 +35,7 @@ echo "<input type='submit' name='Submit' value='Submit' style='float:right;'>";
 &nbsp;&nbsp;
 <input type="button" onclick="SetAllCheckBoxes(false);" value="Uncheck all">
 
-<?
+<?php
 echo "<div id='bets_table'>\n";
 echo "<table>\n";
 

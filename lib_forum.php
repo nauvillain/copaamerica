@@ -166,7 +166,7 @@ function display_main_thread($t_id,$title,$root,$min){
 	$username=mysql_result($m_sql,0,'user_name');
 	$userid=mysql_result($m_sql,0,'user_id');
 	if(!$par_id)echo "<div style='margin-bottom:15px;line-height:2em;'>\n";	
-	echo "<div id='t_$t_id' name='titles_$t_id' class='$class_js'>\n";
+	echo "<div id='t_$t_id' name='titles_$t_id' class='$class_js reply_div'>\n";
 	echo ($root?"Re:":"<span class='forum_thread_title'>".$title."</span>");
 	//" (".mysql_result($m_sql,0,'user_name').")";
 	//($new_items?", $new_items new":"").

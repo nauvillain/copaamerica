@@ -1727,7 +1727,7 @@ $stack=array();
 $stack[]=$id;
 //loop until it finds the admin_id
 do {
-	$query="SELECT contact FROM users WHERE id='$id' and player='1'";
+	$query="SELECT contact FROM users WHERE id='$id' ";
 	$res=mysql_query($query) or die(mysql_error());
 	if($res) $id=mysql_result($res,0);
 	array_push($stack,$id);

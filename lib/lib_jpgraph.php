@@ -46,7 +46,7 @@ return($lineplot);
 
 function make_array_point_id($id){
 
-	$query="SELECT current_points FROM history WHERE player_id='$id' AND match_id IN (SELECT id FROM matches WHERE played=1) ORDER BY match_id";
+	$query="SELECT current_points FROM history WHERE player_id='$id' AND match_id IN (SELECT id FROM matches WHERE played=1) ORDER BY match_id ASC";
 	$ydata=make_array($query);
 
 return($ydata);
@@ -54,7 +54,7 @@ return($ydata);
 
 function make_array_matches_graph(){
 	
-	$query="SELECT t1,t2 FROM matches WHERE played=1";
+	$query="SELECT t1,t2 FROM matches WHERE played=1 ORDER BY match_id ASC";
 	$match=mysql_query($query);
 	$num=mysql_num_rows($match);
 	$array=array();

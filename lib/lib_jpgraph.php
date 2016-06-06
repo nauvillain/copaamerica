@@ -54,7 +54,7 @@ return($ydata);
 
 function make_array_matches_graph(){
 	
-	$query="SELECT t1,t2 FROM matches WHERE played=1 ORDER BY match_id ASC";
+	$query="SELECT t1,t2 FROM matches WHERE played=1 ORDER BY id ASC";
 	$match=mysql_query($query);
 	$num=mysql_num_rows($match);
 	$array=array();

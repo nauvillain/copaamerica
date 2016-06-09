@@ -4,7 +4,6 @@ require 'lib/lib_rankings.php';
 css('rankings.css');
 
 
-
 connect_to_eurodb();
 $money=bet_money($login_id);
 
@@ -72,7 +71,10 @@ if($group) echo "<a href='rankings.php?display=$display&group=0&pot=$pot'>".get_
 else echo "<a href='rankings.php?display=$display&group=1&pot=$pot'>".get_word_by_id(131)."</a>&nbsp; &nbsp;&nbsp;";
 
 if($money){
-	if($pot&&$money) echo "<a href='rankings.php?display=$display&group=$group&pot=0'>".get_word_by_id(130)."</a>&nbsp; &nbsp;&nbsp;";
+	if($pot) {
+		echo "<a href='rankings.php?display=$display&group=$group&pot=0'>".get_word_by_id(130)."</a>&nbsp; &nbsp;&nbsp;";
+	display_pot_numbers();
+	}
 	else  echo "<a href='rankings.php?display=$display&group=$group&pot=1'>".get_word_by_id(149)."</a>&nbsp; &nbsp;&nbsp;";
 }
 

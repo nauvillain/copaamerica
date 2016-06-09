@@ -86,7 +86,11 @@
 
 	$archive_forum="900000";
 
+<<<<<<< HEAD
 	$currency="dollars";	//currency of the money pool
+=======
+	$currency="dollars";
+>>>>>>> newbranch
 	$money_amount=10;
 
 ?>

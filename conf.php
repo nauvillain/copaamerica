@@ -86,4 +86,7 @@
 
 	$archive_forum="900000";
 
+	$currency="dollars";
+	$money_amount=10;
+
 ?>

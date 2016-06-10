@@ -76,15 +76,8 @@
 		9=>"https://en.wikipedia.org/wiki/Camping_World_Stadium",
 		10=>"https://en.wikipedia.org/wiki/CenturyLink_Field");
 	$archive_forum="900000";
-<<<<<<< HEAD
 	$currency="dollars";
-=======
 
-<<<<<<< HEAD
 	$currency="dollars";	//currency of the money pool
-=======
-	$currency="dollars";
->>>>>>> newbranch
->>>>>>> e095d51c8412bdc7cafa84494acf549859c8be18
 	$money_amount=10;
 ?>
